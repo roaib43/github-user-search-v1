@@ -7,10 +7,13 @@ const chrome = require('selenium-webdriver/chrome');
     - We can also improve this by moving to Root before hook and make it global, so it can be accessed by anywhere in the framework
 */
 async function initializeChromeDriver() {
-    const options = new chrome.Options();
-    return driver = await new Builder().forBrowser('chrome').setChromeOptions(options).build();
+  const options = new chrome.Options();
+  return (driver = await new Builder()
+    .forBrowser('chrome')
+    .setChromeOptions(options)
+    .build());
 }
 
 module.exports = {
-    initializeChromeDriver
+  initializeChromeDriver,
 };

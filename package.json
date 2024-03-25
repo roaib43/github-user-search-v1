@@ -12,7 +12,8 @@
     "test": "jest",
     "test:watch": "yarn test --watch",
     "test:coverage": "yarn test --coverage",
-    "teste2e": "mocha --timeout 60000 --require mocha-steps automation-test/testCases --reporter mochawesome"
+    "teste2e": "mocha --timeout 60000 --require mocha-steps automation-test/testCases/E2E --reporter mochawesome",
+    "integrationtest": "mocha --timeout 60000 --require mocha-steps automation-test/testCases/integration --reporter mochawesome"
   },
   "dependencies": {
     "axios": "^0.26.1",
