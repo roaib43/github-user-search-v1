@@ -58,5 +58,5 @@ Scope of Improvement:
 
 Test Report Example:
 <div align="center">
-<img src="./automation-test/testResultImage/github-search-user.png" />
+<img src="./automation-test/testResultImage/TestResults.png" />
 </div>
