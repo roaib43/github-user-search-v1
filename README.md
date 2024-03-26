@@ -37,8 +37,10 @@ Project Structure:
     - navigation.js - this file is used to navigate in the web application (opening pages, clicking on elements, scroll) anything related to navigation can be implemented here
     - screenChecks.js - this file is used to check the expected result on any of element on web application (we perform asserts)
     - setUp.js - this file is used to prepare the environment for scripts to execute (creating browser driver object) 
- - testCases (directory): 
-    - Conatins all the test cases (as of now, only contains a E2E test script)
+ - testCases (directory): Conatins all the test cases
+    - E2E: Conatins E2E test scripts
+    - integration: Contains all integration test scripts
+    - unitTest: Contains unit test I have added 
  - locators.json - this is a json file that holds all the unique identifiers for each of the web element that we want to interact with
 
 Dependencies:
