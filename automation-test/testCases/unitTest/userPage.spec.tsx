@@ -1,7 +1,8 @@
+import React from 'react';
 import { render, getByText } from '@testing-library/react'; // Importing getByText function
 import { BrowserRouter as Router } from 'react-router-dom';
-import { User } from '../../../src/pages/User/User';
 
+import { User } from '../../../src/pages/User/User';
 
 jest.mock('../../../src/hooks/useFetch', () => ({
   useFetch: jest.fn(() => ({
@@ -18,6 +19,6 @@ describe('User Page - Error when user not found', () => {
         <User />
       </Router>
     );
-    expect(getByText(container,'Ops, something went wrong 😢')).toBeInTheDocument(); // Asserting that error message is present
+    expect(getByText(container, 'Ops, something went wrong 😢')).toBeInTheDocument();
   });
 });

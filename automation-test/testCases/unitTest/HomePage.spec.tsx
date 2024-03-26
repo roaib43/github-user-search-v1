@@ -1,19 +1,20 @@
+import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 import { Home } from '../../../src/pages/Home/Home';
 
 describe('Home', () => {
-    it('renders correctly', () => {
-        const { container } = render(
-          <Router>
-            <Home />
-          </Router>
-        );
-        expect(container).toMatchSnapshot();
-      });
+  it('renders correctly', () => {
+    const { container } = render(
+      <Router>
+        <Home />
+      </Router>
+    );
+    expect(container).toMatchSnapshot();
+  });
 
-  it('disables search button when username length is less than or equal to 3', () => {
+  it('check search button disabled when username length is less than or equal to 3', () => {
     const { getByPlaceholderText, getByRole } = render(
       <Router>
         <Home />
