@@ -1,0 +1,20 @@
+{
+  "headerLocator": "//*[@class='_title_1kib8_23']",
+  "titleLocator": "//*[@class='_title_5o35q_14']",
+  "userName": {
+    "userNameLocator": "//input[@name='username']",
+    "searchButtonLocator": "//button[@class='_button_9k1wr_1 _button_5o35q_22']"
+  },
+  "userInfoSection": "//*[@class='_userInfo_7hzna_67']/p",
+  "returnButton": "//button[@class='_button_9k1wr_1 _button_7hzna_91']",
+  "repoSection": {
+    "repoNameLocator": "//li[@class='_repoItem_7hzna_49']/strong[text()=",
+    "repoDescpLocator": "//li[@class='_repoItem_7hzna_49']/p[text()=",
+    "emptyDescpLocator": "//li[@class='_repoItem_7hzna_49']/p[not(node())]"
+  },
+  "userAvtar": "//*[@class='_avatar_7hzna_22']",
+  "homePageTitle": "//*[@class='_title_5o35q_14']",
+  "detailsPageHeader": "//*[@class='_title_7hzna_18']",
+  "detailsPageError": "//*[@class='_errorMessage_7hzna_86']",
+  "footerLocator":"//*[@class='_container_1ymcw_1']"
+}
